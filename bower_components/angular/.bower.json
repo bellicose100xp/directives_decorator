@@ -1,0 +1,18 @@
+{
+  "name": "angular",
+  "version": "1.4.0-beta.3",
+  "main": "./angular.js",
+  "ignore": [],
+  "dependencies": {},
+  "homepage": "https://github.com/angular/bower-angular",
+  "_release": "1.4.0-beta.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.4.0-beta.3",
+    "commit": "296f6a3ccc76371f4ab26976694f7d3373a49f94"
+  },
+  "_source": "git://github.com/angular/bower-angular.git",
+  "_target": "1.4.0-beta.3",
+  "_originalSource": "angular",
+  "_direct": true
+}

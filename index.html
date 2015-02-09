@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head lang="en">
     <meta charset="UTF-8">
     <title>Decorator Directive</title>
@@ -13,7 +13,27 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="script.js"></script>
 </head>
-<body>
+<body ng-controller="mainController as mc" class="container" style="padding-top: 10px">
+<!--<video id="vid"-->
+       <!--controls-->
+       <!--spacebar-support-->
+       <!--event-pause="mc.pauseHandler(event)"-->
+       <!--preload="none">-->
+    <!--<source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">-->
+<!--</video>-->
+<!--<ul>-->
+    <!--<li ng-repeat="message in mc.messages">-->
+        <!--{{message.text}}-->
+    <!--</li>-->
+<!--</ul>-->
+
+<!--<div my-click="mc.clickHandler(mc.data)" style="cursor: pointer;">-->
+    <!--<h1>{{mc.data.message}}</h1>-->
+<!--</div>-->
+
+<user-tiles user="mc.user1"></user-tiles>
+
+</div>
 
 </body>
 </html>

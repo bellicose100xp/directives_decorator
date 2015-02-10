@@ -2,7 +2,7 @@
  * Created by admin on 2/5/2015.
  */
 angular.module('myApp', []);
-angular.module('myApp').controller('mainController', function () {
+angular.module('myApp').controller('mainController', function ($scope) {
     var mc = this;
     mc.messages = [];
     mc.i = 1;
@@ -17,9 +17,9 @@ angular.module('myApp').controller('mainController', function () {
        data_from_view.message = "I have been clicked" ;
     };
     mc.user1 = {
-        name: "Bellicose",
+        name: "Scope Test",
         selected: false
-    }
+    };
 });
 angular.module('myApp').directive('spacebarSupport', function ($document) {
     return {
@@ -77,8 +77,8 @@ angular.module('myApp').directive('userTileSelect', function () {
     return {
         link: function (scope, element, attrs) {
             element.on('click', function (event) {
-                scope.user.selected = !scope.user.selected;
-                $scope.apply();
+               scope.user.selected = !scope.user.selected;
+                scope.$apply();
             })
         }
     }
